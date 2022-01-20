@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+    div{
+        background: #659494;
+        border: 10px solid rgb(100, 221, 230);
+        margin: 5px;
+        padding: 2px;
+    }
+    .section_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: (2, 1fr);
+    }
+
+    .product4 {
+        grid-column-start: 2;
+        grid-column-end: 1;
+    }
+
+    .product8 {
+        grid-column: span 2;
+    }
+    
+
+</style>
+
+<section class="section_grid">
+    <div>LOGO</div>
+    <div>FLIPKART</div>
+    <div>product 3</div>
+    <div class="product4">product 4</div>
+    <div class="product5">product 5  </div>
+    <div>product 6</div>
+    <div>product 7</div>
+    <div class="product8">product 8</div>
+</section>
+
+</html>
