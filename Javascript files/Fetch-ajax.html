@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch API</title>
+    <header style="font-size: 14pt; color:white; background-color: black; text-align: center;display:inline">AJAX</header>
+    <hr>
+    <div id="logger"></div>
+    <hr>
+</head>
+<script>
+    var logg = document.getElementById("logger");
+    sendAJaxRequest= () => {
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then( res => res.json())
+        .then( res => alert(res[7].body) );
+    };
+
+
+    <button onclick="sendAJaxRequest();">clock here to send an fetchrequesty</button>
+    </body>
+    </script>
